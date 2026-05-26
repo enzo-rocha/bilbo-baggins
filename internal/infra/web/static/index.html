@@ -3,28 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bilbo Baggins - Jogos diários da Terra-média</title>
+  <title>Bilbo Baggins - Jogos di&aacute;rios da Terra-m&eacute;dia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/styles.css?v=2">
 </head>
 <body>
+  <div class="background-scene" aria-hidden="true">
+    <span class="moon"></span>
+    <span class="ring-glow"></span>
+    <span class="mountains mountains-back"></span>
+    <span class="mountains mountains-front"></span>
+  </div>
+
   <div class="page-shell">
-    <header class="topbar" aria-label="Barra principal">
-      <a class="brand" href="#" aria-label="Bilbo Baggins inicio">
+    <header class="site-header" aria-label="Barra principal">
+      <a class="brand" href="#" aria-label="Bilbo Baggins in&iacute;cio">
         <span class="brand-mark" aria-hidden="true">BB</span>
-        <span>
+        <span class="brand-copy">
           <strong>Bilbo Baggins</strong>
-          <small>Jogos diários da Terra-média</small>
+          <small>Jogos di&aacute;rios da Terra-m&eacute;dia</small>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="Navegacao principal">
+      <nav class="main-nav" aria-label="Navega&ccedil;&atilde;o principal">
         <a href="#" class="active">Jogos</a>
         <a href="#">Boosters</a>
-        <a href="#">Colecao</a>
-        <a href="#">Ranking</a>
+        <a href="#">Cole&ccedil;&atilde;o</a>
       </nav>
 
       <div class="wallet" aria-label="Moedas do jogador">
@@ -33,50 +39,23 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-copy">
-          <p class="eyebrow">Desafios diários da Terra-média</p>
-          <h1 id="page-title">Prove que você conhece cada sombra, espada e linhagem.</h1>
-          <p class="intro">
-            Jogue desafios diários, ganhe moedas, abra boosters e complete sua coleção de cartas inspirada nas eras da Terra-média.
-          </p>
-        </div>
-
-        <aside class="daily-panel" aria-label="Resumo diario">
-          <span class="panel-label">Recompensa de hoje</span>
-          <strong>+120 moedas</strong>
-          <p>Complete 3 jogos diários para liberar um booster comum.</p>
-          <div class="progress" aria-label="Progresso diario: 1 de 3 jogos completos">
-            <span style="width: 33%"></span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section-heading" aria-labelledby="games-title">
-        <div>
-          <p class="eyebrow">Escolha seu desafio</p>
-          <h2 id="games-title">Jogos diários</h2>
-        </div>
-        <button class="ghost-button" type="button">Ver histórico</button>
-      </section>
-
-      <section class="game-grid" aria-label="Lista de jogos diarios">
-        <article class="game-card featured">
+    <main class="games-main">
+      <section class="game-grid" aria-label="Lista de jogos di&aacute;rios">
+        <article class="game-card">
           <div class="card-art ring-art" aria-hidden="true">
             <span></span>
           </div>
           <div class="card-content">
-            <span class="status available">Disponivel</span>
-            <h3>Personagem Secreto</h3>
-            <p>Adivinhe o personagem do dia usando pistas de raça, reino, arma e aliança.</p>
+            <span class="status available">Dispon&iacute;vel</span>
+            <h2>Personagem Secreto</h2>
+            <p>Adivinhe o personagem do dia usando pistas de ra&ccedil;a, reino, arma e alian&ccedil;a.</p>
             <dl class="game-meta">
               <div>
                 <dt>Tentativas</dt>
                 <dd>8</dd>
               </div>
               <div>
-                <dt>Premio</dt>
+                <dt>Pr&ecirc;mio</dt>
                 <dd>50 moedas</dd>
               </div>
             </dl>
@@ -89,16 +68,16 @@
             <span></span>
           </div>
           <div class="card-content">
-            <span class="status available">Disponivel</span>
-            <h3>Mapa da Jornada</h3>
+            <span class="status available">Dispon&iacute;vel</span>
+            <h2>Mapa da Jornada</h2>
             <p>Descubra o local correto a partir de pistas sobre rotas, povos e acontecimentos.</p>
             <dl class="game-meta">
               <div>
                 <dt>Modo</dt>
-                <dd>Diário</dd>
+                <dd>Di&aacute;rio</dd>
               </div>
               <div>
-                <dt>Premio</dt>
+                <dt>Pr&ecirc;mio</dt>
                 <dd>35 moedas</dd>
               </div>
             </dl>
@@ -111,8 +90,8 @@
             <span></span>
           </div>
           <div class="card-content">
-            <span class="status available">Disponivel</span>
-            <h3>Quem Disse?</h3>
+            <span class="status available">Dispon&iacute;vel</span>
+            <h2>Quem Disse?</h2>
             <p>Leia uma frase e escolha quem falou, a qual povo pertence ou em qual saga aparece.</p>
             <dl class="game-meta">
               <div>
@@ -120,7 +99,7 @@
                 <dd>5</dd>
               </div>
               <div>
-                <dt>Premio</dt>
+                <dt>Pr&ecirc;mio</dt>
                 <dd>40 moedas</dd>
               </div>
             </dl>
@@ -134,33 +113,21 @@
           </div>
           <div class="card-content">
             <span class="status soon">Em breve</span>
-            <h3>Duelo de Poder</h3>
-            <p>Compare dois personagens e acerte quem tem maior poder, influência ou resistência.</p>
+            <h2>Duelo de Poder</h2>
+            <p>Compare dois personagens e acerte quem tem maior poder, influ&ecirc;ncia ou resist&ecirc;ncia.</p>
             <dl class="game-meta">
               <div>
                 <dt>Rodadas</dt>
                 <dd>10</dd>
               </div>
               <div>
-                <dt>Premio</dt>
+                <dt>Pr&ecirc;mio</dt>
                 <dd>Booster</dd>
               </div>
             </dl>
             <button class="play-button disabled" type="button" disabled>Bloqueado</button>
           </div>
         </article>
-      </section>
-
-      <section class="collection-strip" aria-label="Colecao e boosters">
-        <div>
-          <p class="eyebrow">Colecao</p>
-          <h2>Abra boosters, encontre cartas raras e complete os povos da Terra-média.</h2>
-        </div>
-        <div class="mini-cards" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </section>
     </main>
   </div>
